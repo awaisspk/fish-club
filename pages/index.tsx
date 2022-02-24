@@ -74,8 +74,33 @@ const Home: NextPage = () => {
                 sustainable product for years to come.
               </Paragraph>
             </Flex>
+            <Box
+              css={{
+                borderRadius: '0',
+                my: '80px',
+                width: '100%',
+                height: '250px',
+                position: 'relative',
+                overflow: 'hidden',
+                '@bp1': {
+                  height: '320px',
+                },
+                '@bp2': {
+                  height: '420px',
+                },
+                '@bp3': {
+                  height: '550px',
+                },
+              }}
+            >
+              <Image
+                src="/images/tunacaviar.webp"
+                layout="fill"
+                objectFit="cover"
+                alt=""
+              />
+            </Box>
           </Box>
-          <Introduction />
         </Main>
       </PageLayout>
     </Box>
