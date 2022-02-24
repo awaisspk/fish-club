@@ -3,7 +3,7 @@ import {H2, ListItem, Paragraph} from '@components/typography';
 import {styled} from '@stitches';
 import Image from 'next/image';
 
-const ImageContainer = styled('div', {
+export const ImageContainer = styled('div', {
   width: '100%',
   height: '250px',
   position: 'relative',
@@ -28,6 +28,7 @@ export const Introduction = () => {
   return (
     <Flex
       as="section"
+      id="introduction"
       gap="9"
       center
       direction={{'@initial': 'col', '@bp4': 'row'}}

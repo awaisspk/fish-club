@@ -22,7 +22,10 @@ const text = css({
 
 export const Text = styled('span', text);
 export const Paragraph = styled('p', text, {
-  fontSize: '$5',
+  fontSize: '$2',
+  '@bp4': {
+    fontSize: '$5',
+  },
   lineHeight: '$5',
 });
 export const ListItem = styled('li', text, {

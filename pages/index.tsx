@@ -1,6 +1,7 @@
 import {Box} from '@components/box';
 import {Header} from '@components/header';
 import {Introduction} from '@components/introduction';
+import {ImageContainer, Introduction} from '@components/introduction';
 import {SecondaryNav} from '@components/nav';
 import {H1} from '@components/typography';
 import {PageLayout} from '@src/layouts';
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
               How It Works
             </H1>
             <SecondaryNav />
+            <Introduction />
           </Box>
           <Introduction />
         </Main>
