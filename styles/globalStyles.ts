@@ -18,6 +18,7 @@ export const globalStyles = globalCss({
   html: {
     font: '100%/1.25 $fonts$primary',
     boxSizing: 'border-box',
+    scrollBehavior: 'smooth',
   },
 
   '*, ::before, ::after': {
