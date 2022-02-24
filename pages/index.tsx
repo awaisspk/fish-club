@@ -36,22 +36,21 @@ const Home: NextPage = () => {
               How It Works
             </H1>
             <SecondaryNav />
-            <Introduction />
+            <Box css={{my: 80}}>
+              <Introduction />
+            </Box>
             <Flex
               as="section"
               direction="col"
               gap="6"
               css={{
                 width: 'min(900px, 100% - 40px)',
-                mx: 'auto',
                 bc: '$indigo4',
                 br: '2rem',
+                mx: 'auto',
                 padding: '2rem',
                 '@bp2': {
                   padding: '3rem',
-                },
-                '@bpmax3': {
-                  mt: '50px',
                 },
               }}
             >
