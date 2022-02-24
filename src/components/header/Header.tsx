@@ -20,7 +20,6 @@ const BgGradiant = styled('div', {
 });
 
 export const Header = () => {
-  const isMobile = useMedia({maxWidth: 750});
   return (
     <Flex
       center
@@ -33,9 +32,14 @@ export const Header = () => {
       <StyledHeader
         justify="spaceBtw"
         align="center"
-        css={{mx: isMobile ? '$5' : '30px'}}
+        css={{mx: '$5', '@bp3': {max: '30px'}}}
       >
-        <Box>{isMobile ? <SiteLogoMobile /> : <SiteLogo />}</Box>
+        <Box css={{'@bp3': {display: 'none'}}}>
+          <SiteLogoMobile />
+        </Box>
+        <Box css={{display: 'none', '@bp3': {display: 'block'}}}>
+          <SiteLogo />
+        </Box>
         <Nav />
       </StyledHeader>
       <BgGradiant />

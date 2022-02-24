@@ -20,12 +20,9 @@ export const Button = styled('button', {
   '&:focus': {
     boxShadow: '$shadow2',
   },
-  variants: {
-    mobile: {
-      true: {
-        py: '$3',
-        px: '$4',
-      },
-    },
+
+  '@bpmax3': {
+    py: '$3',
+    px: '$4',
   },
 });
