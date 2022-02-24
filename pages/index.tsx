@@ -1,15 +1,13 @@
-import { styled } from "@stitches";
-import type { NextPage } from "next";
-
-const Typography = styled("p", {
-  fontFamily: "$secondary",
-  fontSize: "$2",
-  fontWeight: "300",
-  color: "$gray8",
-});
+import {Header} from '@components/header';
+import {PageLayout} from '@src/layouts';
+import type {NextPage} from 'next';
 
 const Home: NextPage = () => {
-  return <Typography>How it works</Typography>;
+  return (
+    <PageLayout>
+      <Header />
+    </PageLayout>
+  );
 };
 
 export default Home;

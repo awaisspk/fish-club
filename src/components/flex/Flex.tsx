@@ -1,70 +1,70 @@
-import {styled} from '@stitches';
-import {gap} from './gap';
+import { styled } from "@stitches";
+import { gap } from "./gap";
 
-export const Flex = styled('div', {
-  display: 'flex',
+export const Flex = styled("div", {
+  display: "flex",
   variants: {
     wrap: {
       wrap: {
-        flexWrap: 'wrap',
+        flexWrap: "wrap",
       },
       noWrap: {
-        flexWrap: 'nowrap',
+        flexWrap: "nowrap",
       },
       wrapReverse: {
-        flexWrap: 'wrap-reverse',
+        flexWrap: "wrap-reverse",
       },
     },
     direction: {
       row: {
-        flexDirection: 'row',
+        flexDirection: "row",
       },
       col: {
-        flexDirection: 'column',
+        flexDirection: "column",
       },
       rowReverse: {
-        flexDirection: 'row-reverse',
+        flexDirection: "row-reverse",
       },
       colReverse: {
-        flexDirection: 'column-reverse',
+        flexDirection: "column-reverse",
       },
     },
     justify: {
       start: {
-        justifyContent: 'flex-start',
+        justifyContent: "flex-start",
       },
       end: {
-        justifyContent: 'flex-end',
+        justifyContent: "flex-end",
       },
       center: {
-        justifyContent: 'center',
+        justifyContent: "center",
       },
       stretch: {
-        justifyContent: 'stretch',
+        justifyContent: "stretch",
       },
       spaceBtw: {
-        justifyContent: 'space-between',
+        justifyContent: "space-between",
       },
       spaceAround: {
-        justifyContent: 'space-around',
+        justifyContent: "space-around",
       },
       spaceEvenly: {
-        justifyContent: 'space-evenly',
+        justifyContent: "space-evenly",
       },
     },
 
     align: {
       start: {
-        alignItems: 'flex-start',
+        alignItems: "flex-start",
       },
       end: {
-        alignItems: 'flex-end',
+        alignItems: "flex-end",
       },
       center: {
-        alignItems: 'center',
+        alignItems: "center",
       },
       stretch: {
-        alignItems: 'stretch',
+        alignItems: "stretch",
       },
     },
 
@@ -72,8 +72,8 @@ export const Flex = styled('div', {
 
     center: {
       true: {
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: "center",
+        alignItems: "center",
       },
     },
   },

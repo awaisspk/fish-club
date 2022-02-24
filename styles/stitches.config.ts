@@ -1,6 +1,17 @@
 import {createStitches} from '@stitches/react';
 import type * as Stitches from '@stitches/react';
-import {whiteA, blackA, indigo, teal, sky, green} from '@radix-ui/colors';
+import {
+  whiteA,
+  blackA,
+  indigo,
+  teal,
+  tealA,
+  sky,
+  green,
+  greenA,
+  indigoA,
+  skyA,
+} from '@radix-ui/colors';
 
 const StitchesConfig = createStitches({
   theme: {
@@ -8,9 +19,13 @@ const StitchesConfig = createStitches({
       ...whiteA,
       ...blackA,
       ...indigo,
+      ...indigoA,
       ...teal,
+      ...tealA,
       ...green,
+      ...greenA,
       ...sky,
+      ...skyA,
       gray1: '#f8fafc',
       gray2: '#f1f5f9',
       gray3: '#e2e8f0',
@@ -156,7 +171,10 @@ const StitchesConfig = createStitches({
       12: '80rem',
       13: '90rem',
     },
-    shadows: {},
+    shadows: {
+      shadow1: 'hsl(224, 87.1%, 92.0%) 0px 10px 50px',
+      shadow2: '#AFDFD7 0px 7px 20px',
+    },
     borderStyles: {},
     borderWidths: {},
     transitions: {},
