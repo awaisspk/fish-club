@@ -19,6 +19,7 @@ const Nav = styled('nav', {
   backdropFilter: 'blur(8px)',
   background: 'rgba(245, 249, 252, 0.5)',
   py: '$12',
+  zIndex: '4',
 });
 
 const Ul = styled('ul', Flex, {
@@ -37,7 +38,7 @@ export const SecondaryNav = () => {
       <Ul wrap="wrap" center>
         {links.map((link, i) => (
           <li key={i}>
-            <Link href={link.url}>{link.label}</Link>
+            <Link href={`#${link.url}`}>{link.label}</Link>
           </li>
         ))}
       </Ul>
