@@ -1,13 +1,15 @@
-import { Box } from "@components/box";
-import { FC } from "react";
+import {Box} from '@components/box';
+import {FC} from 'react';
 
-export const PageLayout: FC = ({ children }) => {
+export const PageLayout: FC = ({children}) => {
   return (
     <>
       <Box
         css={{
-          d: "grid",
-          gridTemplateRows: "max-content 1fr max-content",
+          d: 'grid',
+          gridTemplateRows: 'max-content 1fr max-content',
+          width: '$full',
+          minH: '$screenH',
         }}
       >
         {children}
