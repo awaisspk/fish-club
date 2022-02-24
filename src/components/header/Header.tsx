@@ -15,32 +15,33 @@ const BgGradiant = styled('div', {
   position: 'absolute',
   height: '100%',
   width: '100%',
-  zIndex: '-1',
+  zIndex: 2,
 });
 
 export const Header = () => {
   return (
     <Flex
-      center
       css={{
         position: 'relative',
         minW: '$full',
-        background: '$whiteA12',
+        zIndex: 3,
       }}
     >
-      <StyledHeader
-        justify="spaceBtw"
-        align="center"
-        css={{mx: '$5', '@bp3': {max: '30px'}}}
-      >
-        <Box css={{'@bp3': {display: 'none'}}}>
-          <SiteLogoMobile />
-        </Box>
-        <Box css={{display: 'none', '@bp3': {display: 'block'}}}>
-          <SiteLogo />
-        </Box>
-        <Nav />
-      </StyledHeader>
+      <Flex center css={{zIndex: 4, width: '$full', background: '$whiteA12'}}>
+        <StyledHeader
+          justify="spaceBtw"
+          align="center"
+          css={{mx: '$5', '@bp3': {max: '30px'}}}
+        >
+          <Box css={{'@bp3': {display: 'none'}}}>
+            <SiteLogoMobile />
+          </Box>
+          <Box css={{display: 'none', '@bp3': {display: 'block'}}}>
+            <SiteLogo />
+          </Box>
+          <Nav />
+        </StyledHeader>
+      </Flex>
       <BgGradiant />
     </Flex>
   );

@@ -4,7 +4,7 @@ export const globalStyles = globalCss({
   '@font-face': [
     {
       fontFamily: 'Poiret One',
-      fontDisplay: 'optional',
+      fontDisplay: 'swap',
       src: 'url("/fonts/PoiretOne-Regular.woff2") format("woff2")',
     },
     {

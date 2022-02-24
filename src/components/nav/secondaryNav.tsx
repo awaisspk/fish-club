@@ -19,7 +19,6 @@ const Nav = styled('nav', {
   backdropFilter: 'blur(8px)',
   background: 'rgba(245, 249, 252, 0.5)',
   py: '$12',
-  zIndex: '2',
 });
 
 const Ul = styled('ul', Flex, {
