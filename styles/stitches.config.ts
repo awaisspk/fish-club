@@ -207,9 +207,9 @@ const StitchesConfig = createStitches({
     bf: (value: Stitches.PropertyValue<'backdropFilter'>) => ({
       backdropFilter: value,
     }),
-    bgBlur: (value: Stitches.PropertyValue<'backdropFilter'>) => ({
-      bf: 'saturate(180%) blur(10px)',
-      bg: `${value}66`,
+    bgBlur: (value: Stitches.PropertyValue<'background'>) => ({
+      bf: 'saturate(180%) blur(20px)',
+      bg: value,
     }),
     bgClip: (value: Stitches.PropertyValue<'backgroundClip'>) => ({
       WebkitBackgroundClip: value,
