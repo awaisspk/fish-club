@@ -3,7 +3,6 @@ import {Flex} from '@components/flex';
 import {SiteLogo, SiteLogoMobile} from '@components/icons';
 import {Nav} from '@components/nav';
 import {styled} from '@stitches';
-import useMedia from 'use-media';
 
 const StyledHeader = styled('div', Flex, {
   width: '1200px',
