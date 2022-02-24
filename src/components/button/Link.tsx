@@ -5,7 +5,10 @@ export const Link = styled('a', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  fontSize: '$2',
+  fontSize: '$1',
+  '@bp2': {
+    fontSize: '$2',
+  },
   fontFamily: '$secondary',
   '&:hover': {
     textDecoration: 'underline',

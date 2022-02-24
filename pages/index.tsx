@@ -1,13 +1,19 @@
 import {Box} from '@components/box';
 import {Flex} from '@components/flex';
 import {Header} from '@components/header';
-import {ImageContainer, Introduction} from '@components/introduction';
+import {Introduction} from '@components/introduction';
 import {SecondaryNav} from '@components/nav';
 import {H1, H2, Paragraph} from '@components/typography';
 import {PageLayout} from '@src/layouts';
 import {styled} from '@stitches/react';
 import Image from 'next/image';
 import type {NextPage} from 'next';
+import {
+  Breakdown1,
+  Breakdown2,
+  Breakdown3,
+  Breakdown4,
+} from '@components/breakdown';
 
 const Main = styled('main', {
   background: '#F5F9FC',
@@ -99,6 +105,12 @@ const Home: NextPage = () => {
                 alt=""
               />
             </Box>
+            <Flex direction="col" css={{'@bpmax3': {gap: 100}}}>
+              <Breakdown1 />
+              <Breakdown2 />
+              <Breakdown3 />
+              <Breakdown4 />
+            </Flex>
           </Box>
         </Main>
       </PageLayout>
