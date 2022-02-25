@@ -11,7 +11,7 @@ export const globalStyles = globalCss({
       fontFamily: 'Inter',
       fontStyle: 'normal',
       fontWeight: '100 900',
-      fontDisplay: 'optional',
+      fontDisplay: 'swap',
       src: 'url("/fonts/inter-var-latin.woff2") format("woff2")',
     },
   ],
