@@ -14,6 +14,7 @@ import {
   Breakdown3,
   Breakdown4,
 } from '@components/breakdown';
+import {Footer} from '@components/footer';
 
 const Main = styled('main', {
   background: '#F5F9FC',
@@ -113,6 +114,7 @@ const Home: NextPage = () => {
             </Flex>
           </Box>
         </Main>
+        <Footer />
       </PageLayout>
     </Box>
   );
