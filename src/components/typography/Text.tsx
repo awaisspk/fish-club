@@ -34,7 +34,11 @@ export const ListItem = styled('li', text, {
   fontSize: '$2',
   fontWeight: '$400',
 });
-export const Small = styled('small', text);
+export const Small = styled('small', text, {
+  fontSize: '$1',
+  fontFamily: '$secondary',
+  color: '$gray4',
+});
 export const H1 = styled('h1', text);
 export const H2 = styled('h2', text, {
   fontSize: '$8',
