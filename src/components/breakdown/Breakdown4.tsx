@@ -56,8 +56,8 @@ export const Breakdown4 = () => {
           '@bp3': {
             right: '-20%',
             gridColumn: 2,
-            width: 'min(950px, 100% - 40px)',
-            height: '950px',
+            width: 'min(550px, 100% - 40px)',
+            height: '550px',
             scale: 1.1,
           },
         }}

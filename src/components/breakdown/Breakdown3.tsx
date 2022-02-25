@@ -58,7 +58,7 @@ export const Breakdown3 = () => {
 
         <Paragraph
           css={{
-            my: '30px',
+            mt: '30px',
             fontSize: '$4',
             fontWeigth: '300',
             color: '$gray10',

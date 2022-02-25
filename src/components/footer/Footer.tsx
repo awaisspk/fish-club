@@ -81,8 +81,9 @@ export const Footer = () => {
             css={{
               display: 'grid',
               width: '$full',
+              mx: 'auto',
+              justifyItems: 'start',
               gridTemplateColumns: '1fr 1fr',
-              justifyContent: 'center',
               '@bp3': {gridTemplateColumns: 'repeat(4, 1fr)'},
               gap: '$10',
             }}
