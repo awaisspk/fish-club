@@ -15,7 +15,7 @@ import {
   Breakdown4,
 } from '@components/breakdown';
 import {Footer} from '@components/footer';
-import {AccordianSection} from '@components/accordian';
+import {Faqs} from '@components/faqs/Faqs';
 
 const Main = styled('main', {
   background: '#F5F9FC',
@@ -113,8 +113,8 @@ const Home: NextPage = () => {
               <Breakdown3 />
               <Breakdown4 />
             </Flex>
+            <Faqs />
           </Box>
-          <AccordianSection />
         </Main>
         <Footer />
       </PageLayout>

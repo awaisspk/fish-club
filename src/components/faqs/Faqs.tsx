@@ -1,7 +1,7 @@
 import {Box} from '@components/box';
 import {Flex} from '@components/flex';
 import {H2} from '@components/typography';
-import {Accordian} from './Accordian';
+import {Accordian} from '@components/accordian';
 
 const tokenAccordian = [
   {
@@ -91,9 +91,9 @@ const membershipAccordian = [
   },
 ];
 
-export const AccordianSection = () => {
+export const Faqs = () => {
   return (
-    <Box css={{width: 'min(1200px , 100% - 40px)', mx: 'auto'}}>
+    <Box css={{width: 'min(1200px , 100% - 40px)', mx: 'auto'}} id="faqs">
       <Flex as="section" direction="col" css={{'@bpmax3': {mt: 80}}}>
         <H2
           css={{

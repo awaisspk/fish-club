@@ -206,6 +206,7 @@ export const Footer = () => {
             <Link
               key={i}
               css={{
+                cursor: 'pointer',
                 display: 'flex',
                 gap: '$3',
                 color: '$gray4',
@@ -213,7 +214,7 @@ export const Footer = () => {
               }}
             >
               {link.icon}
-              <Box>{link.label}</Box>
+              {link.label}
             </Link>
           ))}
         </Box>
